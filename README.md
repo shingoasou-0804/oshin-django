@@ -27,4 +27,9 @@ $ docker compose run --rm yomilog python debug.py
 
 # boost
 $ docker compose up
+
+# migration
+$ docker compose run yomilog bash
+:/src/yomilog# python manage.py makemigrations
+:/src/yomilog# python manage.py migrate
 ```
